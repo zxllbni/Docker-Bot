@@ -8,6 +8,7 @@ flask
 gallery-dl
 gevent
 google-generativeai
+gradio_client
 gunicorn
 humanize
 langcodes
@@ -18,7 +19,6 @@ mutagen
 niquests[socks]
 Pillow
 psutil
-deep-translator
 pycurl
 pyrofork
 python-dotenv
