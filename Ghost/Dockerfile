@@ -10,7 +10,7 @@ ENV LANGUAGE=en_US:en
 
 COPY . .
 
-COPY --from=alpine /usr/bin/mp4decrypt /usr/bin/m3u8 /usr/bin/
+COPY --from=alpine /usr/local/bin/mp4decrypt /usr/bin/m3u8 /usr/bin/
 
 RUN apk update
 
