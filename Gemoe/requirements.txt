@@ -14,9 +14,9 @@ humanize
 langcodes
 lxml
 m3u8
-meta-ai-api
 mutagen
 niquests[socks]
+openai
 Pillow
 psutil
 pycurl
