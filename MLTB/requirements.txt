@@ -18,7 +18,6 @@ motor
 natsort
 pillow
 psutil
-pycryptodome
 pymongo
 pyrofork
 python-dotenv
