@@ -17,6 +17,7 @@ lxml
 motor
 natsort
 pillow
+pproxy
 psutil
 pymongo
 pyrofork
