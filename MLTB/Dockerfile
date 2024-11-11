@@ -1,5 +1,5 @@
-FROM arakurumi/mltb:latest
+FROM labani/terabox:latest
 
 COPY . .
 
-RUN pip install --break-system-packages --no-cache-dir --requirement requirements.txt
+RUN pip3 install --no-cache-dir --break-system-packages -r requirements.txt
