@@ -34,17 +34,17 @@ jobs:
             org.opencontainers.image.authors=Kurumi <dolabani46@gmail.com>
             org.opencontainers.image.description=Docker Images for TERABOX
             org.opencontainers.image.licenses=Unlicense
-            org.opencontainers.image.source=https://github.com/arakurumi/docker-bot
+            org.opencontainers.image.source=https://github.com/zxllbni/Docker-Bot
             org.opencontainers.image.title=Docker-Bot
-            org.opencontainers.image.url=https://github.com/arakurumi/docker-bot
+            org.opencontainers.image.url=https://github.com/zxllbni/Docker-Bot
             org.opencontainers.image.version=ubuntu
           annotations: |
-            org.opencontainers.image.authors=Kurumi <kqruumi@gmail.com>
+            org.opencontainers.image.authors=labani <dolabani46@gmail.com>
             org.opencontainers.image.description=Docker Images for TERABOX
             org.opencontainers.image.licenses=Unlicense
-            org.opencontainers.image.source=https://github.com/arakurumi/docker-bot
+            org.opencontainers.image.source=https://github.com/zxllbni/Docker-Bot
             org.opencontainers.image.title=Docker-Bot
-            org.opencontainers.image.url=https://github.com/arakurumi/docker-bot
+            org.opencontainers.image.url=https://github.com/zxllbni/Docker-Bot
             org.opencontainers.image.version=ubuntu
 
       - name: Build and Push to Docker.io
