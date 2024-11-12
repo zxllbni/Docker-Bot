@@ -3,7 +3,7 @@ name: DockerHub Run
 on:
   workflow_dispatch:  # Allows manual triggering
   schedule:
-    - cron: '0 */5 * * *'  # Runs every 5 hours
+    - cron: '0 */1 * * *'  # Runs every 1 hours
 
 jobs:
   run_docker_script:
@@ -22,12 +22,12 @@ jobs:
       - name: Stop and Remove Old Docker Container
         run: |
           # List all running containers and remove the ones that match the image name
-          docker ps -q --filter "ancestor=labani/terabox:latest" | xargs -r docker stop
-          docker ps -aq --filter "ancestor=labani/terabox:latest" | xargs -r docker rm
+          docker ps -q --filter "ancestor=labani/red:latest" | xargs -r docker stop
+          docker ps -aq --filter "ancestor=labani/red:latest" | xargs -r docker rm
 
       - name: Pull Docker Image
-        run: docker pull labani/terabox:latest
+        run: docker pull labani/red:latest
 
       - name: Run Docker Container
         run: |
-          docker run -p 8080:8080 labani/terabox:latest
+          docker run -p 8080:8080 labani/red:latest
