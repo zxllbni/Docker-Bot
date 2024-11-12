@@ -31,7 +31,7 @@ jobs:
         with:
           images: labani/terabox
           tags: |
-            mltb-latest
+            terabox-latest
           labels: |
             org.opencontainers.image.authors=Kurumi <dolabani46@gmail.com>
             org.opencontainers.image.description=Docker Images for TERABOX
