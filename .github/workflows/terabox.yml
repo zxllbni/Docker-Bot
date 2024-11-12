@@ -1,4 +1,4 @@
-name: Dockerhub Run Telegram Bot with Interval
+name: DockerHub Run Script with Interval
 
 on:
   workflow_dispatch:  # Allows manual triggering
@@ -6,7 +6,7 @@ on:
     - cron: '0 */5 * * *'  # Runs every 5 hours
 
 jobs:
-  run_telegram_bot:
+  run_docker_script:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,15 +22,6 @@ jobs:
       - name: Pull Docker Image
         run: docker pull labani/terabox:latest
 
-      - name: Run Docker Container and Start Telegram Bot
+      - name: Run Docker Container
         run: |
-          docker run --rm -d --name my_telegram_bot \
-          -e TELEGRAM_TOKEN=${{ secrets.TELEGRAM_BOT_TOKEN }} \
-          labani/terabox:latest bash -c "
-          # Run the Telegram bot script inside the container
-          python3 terabox.py
-          "
-      
-      - name: Check if Telegram bot is running
-        run: |
-          docker ps | grep my_telegram_bot
+          docker run -p 8080:8080 labani/terabox:latest
