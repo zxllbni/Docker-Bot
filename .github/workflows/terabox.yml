@@ -43,7 +43,9 @@ jobs:
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v4
         with:
+          # Change `.` to the directory where your Dockerfile is located, if it's not in the root.
           context: .
+          file: ./Dockerfile  # specify the exact Dockerfile path if it's in a subdirectory
           push: true
           no-cache: true
           platforms: linux/amd64
